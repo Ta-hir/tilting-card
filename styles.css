@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    /* background: red; */
+    min-height: 100vhs;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+.container {
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 60vh;
+    width: 50%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.253), 0 0 0 10px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    padding: 0 1.5rem;
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info h1 {
+    margin-top: 1rem;
+    transition: all 0.5s ease;
+}
+
+.sneaker img {
+    width: 200px;
+    z-index: 2;
+    transition: all 0.5s ease;
+
+}
+
+.circle {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(to right, rgba(254, 70, 66, 0.75), rgba(8, 83, 66, 0.75));
+    border-radius: 50%;
+}
+
+.size {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+
+}
+
+.size button {
+    border: none;
+    padding: .5rem 1rem;
+    background: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    color: #585885;
+}
+
+button.active {
+    background: #585885;
+    color: #fff;
+}
+
+.purchase {
+    margin: 2rem 0;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0;
+    background: #f54642;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+
+}
